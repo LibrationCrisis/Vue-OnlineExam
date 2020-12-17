@@ -11,7 +11,7 @@ export default new Router({
     },
     {
       path: '/index', //教师主页
-      component: () => import('@/components/admin/index'),
+      component: () => import('@/components/teacher/index'),
       children: [
         {
           path: '/', //首页默认路由
@@ -61,7 +61,7 @@ export default new Router({
           path: '/addAnswerChildren', //点击试卷跳转到添加题库页面
           component: () => import('@/components/teacher/addAnswerChildren')
         },
-        {
+       /* {
           path: '/studentManage', //学生管理界面
           component: () => import('@/components/teacher/studentManage')
         },
@@ -76,7 +76,7 @@ export default new Router({
         {
           path: '/addTeacher',
           component: () => import ('@/components/admin/addTeacher')
-        }
+        }*/
       ]
     },
     {
@@ -84,10 +84,10 @@ export default new Router({
       component: () => import('@/components/student/index'),
       children: [
         {path:"/",component: ()=> import('@/components/student/myExam')},
-        {path:'/startExam', component: () => import('@/components/student/startExam')},
-        {path: '/manager', component: () => import('@/components/student/manager')},
+        // {path:'/startExam', component: () => import('@/components/student/startExam')},
+        /*{path: '/manager', component: () => import('@/components/student/manager')},*/
         {path: '/examMsg', component: () => import('@/components/student/examMsg')},
-        {path: '/message', component: () => import('@/components/student/message')},
+        /*{path: '/message', component: () => import('@/components/student/message')},*/
         {path: '/studentScore', component: () => import("@/components/student/answerScore")},
         {path: '/scoreTable', component: () => import("@/components/student/scoreTable")}
       ]

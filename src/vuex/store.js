@@ -25,12 +25,12 @@ const state = {
       icon: 'icon-performance',
       content:[{item1:'学生成绩查询',path:'/allStudentsGrade'},{path: '/grade'},{item2: '成绩分段查询',path: '/selectExamToPart'},{path: '/scorePart'}],
     },
-    {
-      index: '4',
-      title: '学生管理',
-      icon: 'icon-role',
-      content:[{item1:'学生管理',path:'/studentManage'},{item2: '添加学生',path: '/addStudent'}],
-    },
+    // {
+    //   index: '4',
+    //   title: '学生管理',
+    //   icon: 'icon-role',
+    //   content:[{item1:'学生管理',path:'/studentManage'},{item2: '添加学生',path: '/addStudent'}],
+    // },
     // {
     //   index: '5',
     //   title: '教师管理',
@@ -57,7 +57,7 @@ const mutations = {
   }
 }
 const getters = {
- 
+
 }
 const actions = {
   getUserInfo(context,info) {
